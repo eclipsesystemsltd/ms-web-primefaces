@@ -1,0 +1,118 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>IGNORED</title>
+</h:head>
+
+<h:body>
+	<ui:composition template="templates/masterLayout.xhtml">
+		<ui:define name="content">
+			<h3>Create customer account</h3>
+			<h:form>
+				<table>
+					<tr>
+						<td>
+							<h:outputText value="Title" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.title}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h:outputText value="First Name" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.firstName}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h:outputText value="Last Name" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.lastName}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h:outputText value="First Line of Address" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.addressFirstLine}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h:outputText value="Second Line of Address" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.addressSecondLine}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h:outputText value="Town" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.town}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h:outputText value="County" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.county}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h:outputText value="Post Code" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.postcode}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h:outputText value="Mobile Number" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.mobile}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h:outputText value="Phone Number" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.phone}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h:outputText value="Email" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.email}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h:outputText value="Password" escape="false" />
+						</td>
+						<td>
+							<h:inputText value="#{customerAccountBean.password}" />
+						</td>
+					</tr>
+				</table>
+				
+				<h:commandButton value="Create Account" action="#{customerAccountBean.createAccount}" />
+			</h:form>
+		</ui:define>
+	</ui:composition>	
+</h:body>
+</html>
